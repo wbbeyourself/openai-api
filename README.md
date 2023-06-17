@@ -19,7 +19,7 @@
 | Features                         |  Status        |    Version   |
 | -------------------------------- | :------------: | :----------: |
 | 最简单的API调用                   | ✅ Supported  | V0.1           |
-| 支持代理的API调用                 | 🔧 Developing | V0.2           |
+| 支持代理的API调用                 | ✅ Supported  | V0.2           |
 | 支持多key自动切换的API调用        | 🔧 Developing | V1.5           |
 | 支持多key多进程的API调用          | 🔧 Developing | V2.0           |
 
@@ -49,6 +49,7 @@ pip install -r requirements.txt
 # 🔥 运行代码
 Tips: 记得先配置 `apikey.txt` !!!
 
+## V0.1
 运行 `v0.1` 版代码（假设你的网络可以正常访问 OpenAI 接口）。
 ```bash
 python v0.1.py
@@ -65,6 +66,21 @@ response: 小明。
 ```text
 openai.error.APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443)
 ```
+
+## V0.2
+
+支持代理的API调用，只需简单引入如下三行代码即可(7890的端口改成你自己的魔法代理端口)：
+```python
+proxy = "http://127.0.0.1:7890"
+os.environ["HTTP_PROXY"] = proxy
+os.environ["HTTPS_PROXY"] = proxy
+```
+
+运行 `v0.2` 版代码 (需要打开系统代理才行，如果还是不行，得换个干净的代理)
+```bash
+python v0.2.py
+```
+
 
 
 # 👍 交流合作
