@@ -26,27 +26,27 @@
 
 # ⚡️环境配置
 
-In `config` directory, copy `apikey.txt.template` to `apikey.txt`, put your openai apikey in it. This file is ignored to protect privacy.
+打开 `config` 文件夹， 将 `apikey.txt.template` 复制为 `apikey.txt`，将你的apikey (格式如`sk-xxx`)放到该文件中。 为了保护用户隐私，该文件已经被git版本管理器忽略，不用担心会泄露到github上。
 
-## 😊 Requirements
+## 😊 依赖库
 
-The key requirements are as below:
+核心的依赖库:
 
 - python 3.8+
 - openai 0.27.0+
 
-Use conda to create environment.
+使用 Conda 创建 python 虚拟环境：
 ```shell
 conda create -n api python=3.8 -y
 conda activate api
 ```
 
-You can install the requirements by running:
+安装依赖包:
 ```shell
 pip install -r requirements.txt
 ```
 
-# 🔥 Run
+# 🔥 运行代码
 Tips: 记得先配置 `apikey.txt` !!!
 
 运行 `v0.1` 版代码（假设你的网络可以正常访问 OpenAI 接口）。
@@ -67,6 +67,6 @@ openai.error.APIConnectionError: Error communicating with OpenAI: HTTPSConnectio
 ```
 
 
-# 👍 Contributing
+# 👍 交流合作
 
-We welcome contributions and suggestions!
+欢迎小伙伴们多多贡献代码和建议。如果你觉得这个项目有帮助，麻烦star支持一下，非常感谢，ღ( ´･ᴗ･` )比心。
