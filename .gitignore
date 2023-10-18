@@ -9,3 +9,4 @@ apikey.txt
 log.txt
 tmp.txt
 .DS_Store
+byte_api.py
